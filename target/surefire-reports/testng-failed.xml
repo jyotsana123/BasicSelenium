@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="Tests.CheckboxTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="selectCheckbox"/>
+          <include name="launchWebsite"/>
+        </methods>
+      </class> <!-- Tests.CheckboxTest -->
+      <class name="Tests.SwitchNewTabTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchWebsite"/>
+          <include name="getTitleOfParentWindow"/>
+        </methods>
+      </class> <!-- Tests.SwitchNewTabTest -->
+      <class name="Tests.AutoSuggestiveDropdownTest">
+        <methods>
+          <include name="enterText"/>
+          <include name="closeBrowser"/>
+          <include name="launchWebsite"/>
+        </methods>
+      </class> <!-- Tests.AutoSuggestiveDropdownTest -->
+      <class name="Tests.RadioButtonsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchWebsite"/>
+          <include name="totalCountOfRadioButton"/>
+        </methods>
+      </class> <!-- Tests.RadioButtonsTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
