@@ -7,8 +7,11 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import PageObject.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -27,7 +30,11 @@ public class BaseTest {
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions opt = new ChromeOptions();
+			opt.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(opt);
+			//driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -43,9 +50,21 @@ public class BaseTest {
 		return landingpage;
 	}
 	
-	@AfterMethod
-	public void closeBrowser()
+	@BeforeTest
+	public void print()
 	{
-		driver.close();
+		System.out.println("Before Test");
 	}
+	
+	@BeforeClass
+	public void print1()
+	{
+		System.out.println("Before Class");
+	}
+	
+//	@AfterMethod
+//	public void closeBrowser()
+//	{
+//		driver.close();
+//	}
 }

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.SwitchNewTabTest">
+      <class name="Tests.CheckboxTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="selectCheckbox"/>
           <include name="launchWebsite"/>
-          <include name="getTitleOfParentWindow"/>
+          <include name="getCheckboxCount"/>
         </methods>
-      </class> <!-- Tests.SwitchNewTabTest -->
+      </class> <!-- Tests.CheckboxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

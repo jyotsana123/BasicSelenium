@@ -22,4 +22,6 @@ public class CheckboxTest extends BaseTest {
 	{
 		checkbox.selectCheckbox();
 	}
+	
+	
 }

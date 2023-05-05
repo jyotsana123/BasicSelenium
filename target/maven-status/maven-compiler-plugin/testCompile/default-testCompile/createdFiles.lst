@@ -1,0 +1,7 @@
+TestComponent\BaseTest.class
+Tests\CheckboxTest.class
+Tests\RadioButtonsTest.class
+Tests\AutoSuggestiveDropdownTest.class
+Tests\StaticDropdownTest.class
+Tests\FrameworkBasics.class
+Tests\SwitchNewTabTest.class

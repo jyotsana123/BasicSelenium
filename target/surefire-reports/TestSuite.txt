@@ -1,55 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 87.973 s <<< FAILURE! - in TestSuite
-enterText(Tests.AutoSuggestiveDropdownTest)  Time elapsed: 10.494 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=110.0.5481.178)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8509bce28d80b39f028f29b95eb72e2, findElements {using=xpath, value=//ul[contains(@class,'ui-widget-content')]/li}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Jyotsana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50078/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8509bce28d80b39f028f29b95eb72e2
-	at Tests.AutoSuggestiveDropdownTest.enterText(AutoSuggestiveDropdownTest.java:17)
-
-closeBrowser(Tests.AutoSuggestiveDropdownTest)  Time elapsed: 10.536 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=110.0.5481.178)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8509bce28d80b39f028f29b95eb72e2, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Jyotsana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50078/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e8509bce28d80b39f028f29b95eb72e2
-
-selectCheckbox(Tests.CheckboxTest)  Time elapsed: 0.018 s  <<< FAILURE!
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 56.567 s <<< FAILURE! - in TestSuite
+selectCheckbox(Tests.CheckboxTest)  Time elapsed: 0.044 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1da244b3c630a158bedecad748033b49, findElement {using=id, value=checkBoxOption3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Jyotsana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50138}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50138/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1da244b3c630a158bedecad748033b49
+Command: [3bb0cfcda7be7dae518f1f0960fff2f9, findElement {using=id, value=checkBoxOption3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Jyotsana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bb0cfcda7be7dae518f1f0960fff2f9
 	at Tests.CheckboxTest.selectCheckbox(CheckboxTest.java:23)
 
-totalCountOfRadioButton(Tests.RadioButtonsTest)  Time elapsed: 0.014 s  <<< FAILURE!
+totalCountOfRadioButton(Tests.RadioButtonsTest)  Time elapsed: 0.007 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [92b0fea608541a19f6ace9e169dd8d6b, findElements {using=xpath, value=//div[@id='radio-btn-example']/fieldset/label}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Jyotsana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50213}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50213/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 92b0fea608541a19f6ace9e169dd8d6b
+Command: [25bdae9a2a7b34a6ca17cf93205054c7, findElements {using=xpath, value=//div[@id='radio-btn-example']/fieldset/label}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Jyotsana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52892}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52892/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25bdae9a2a7b34a6ca17cf93205054c7
 	at Tests.RadioButtonsTest.totalCountOfRadioButton(RadioButtonsTest.java:22)
-
-getTitleOfParentWindow(Tests.SwitchNewTabTest)  Time elapsed: 0.003 s  <<< FAILURE!
-java.util.NoSuchElementException
-	at Tests.SwitchNewTabTest.getTitleOfParentWindow(SwitchNewTabTest.java:23)
 

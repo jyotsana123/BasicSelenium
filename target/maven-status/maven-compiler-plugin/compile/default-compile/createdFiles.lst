@@ -1,0 +1,6 @@
+PageObject\AutoSuggestiveDropdown.class
+PageObject\StaticDropdown.class
+PageObject\SwitchNewTab.class
+PageObject\Checkbox.class
+PageObject\LandingPage.class
+PageObject\RadioButtons.class

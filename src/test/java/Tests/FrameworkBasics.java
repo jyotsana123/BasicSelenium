@@ -113,6 +113,10 @@ public class FrameworkBasics {
 		   System.out.println( driver.switchTo().alert().getText());
 		   driver.switchTo().alert().dismiss();    //cancel alert
 		   
+		   //Link on footer
+		   //Count of links available on web page
+		   System.out.println(driver.findElements(By.tagName("a")).size());
+		   
 	}
 
 }

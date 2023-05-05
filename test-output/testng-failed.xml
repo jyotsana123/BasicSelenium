@@ -3,20 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.CheckboxTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchWebsite"/>
-          <include name="selectCheckbox"/>
-        </methods>
-      </class> <!-- Tests.CheckboxTest -->
       <class name="Tests.RadioButtonsTest">
         <methods>
-          <include name="closeBrowser"/>
+          <include name="print"/>
+          <include name="print1"/>
+          <include name="selectRadioButton"/>
           <include name="launchWebsite"/>
-          <include name="totalCountOfRadioButton"/>
         </methods>
       </class> <!-- Tests.RadioButtonsTest -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Dropdown(failed)">
+    <classes>
+      <class name="Tests.StaticDropdownTest">
+        <methods>
+          <include name="selectFropdown"/>
+          <include name="printSelectedDropdown"/>
+          <include name="print"/>
+          <include name="print1"/>
+          <include name="launchWebsite"/>
+        </methods>
+      </class> <!-- Tests.StaticDropdownTest -->
+    </classes>
+  </test> <!-- Dropdown(failed) -->
 </suite> <!-- Failed suite [Suite] -->
